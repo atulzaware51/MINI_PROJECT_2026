@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SecuriScan</title>
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- <style>        body {            background-color: #f4f6f9;}        .hero {            background: #eef2f7;            padding: 80px 0;}        .feature-card {            border-radius: 12px;            padding: 20px;            background: white;            box-shadow: 0 2px 10px rgba(0,0,0,0.05);text-align: center;}        .section {            padding: 60px 0;}        .icon {            font-size: 40px;            margin-bottom: 10px;}        .dashboard-box {            background: linear-gradient(135deg, #2c5aa0, #3d79d8);border-radius: 12px;            color: white;            padding: 20px;}        .login-card {            background: white;            padding: 25px;            border-radius: 10px;            box-shadow: 0 2px 10px rgba(0,0,0,0.1);}</style> -->
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-light bg-white shadow-sm px-4">
+    <span class="navbar-brand fw-bold">SecuriScan</span>
+    <div>
+        <!-- <a href="#" class="btn btn-outline-secondary btn-sm">Login</a> -->
+        <button  onclick="window.location.href ='login.html'" class="btn btn-outline-seccondary tbn-sm"> Login in </button>
+        <!-- <a href="#" class="btn btn-primary btn-sm">Sign Up</a> -->
+        <button onclick="window.location.href='signin.html'"
+            class="btn btn-primary
+            ">Sign up</button>
+
+    </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="container">
+        <div class="row align-items-center">
+            
+            <!-- Text -->
+            <div class="col-md-6">
+                <h1 class="fw-bold">
+                    Your Website,<br>
+                    <span class="text-primary">Secured.</span>
+                </h1>
+                <p class="text-muted">
+                    Get up your code, scan and secure costs to
+                    ensure your vulnerability scanner.
+                </p>
+                <!-- <button class="btn btn-primary">Get Started</button> -->
+            <button onclick="window.location.href='dashboard.html'"
+            class="btn btn-primary
+            ">Get Started</button>
+            </div>
+
+            <!-- Image -->
+            <div class="col-md-6 text-center">
+                <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" width="200">
+            </div>
+
+        </div>
+    </div>
+<!-- </section>
+<section class="section text-center">
+    <div class="container">
+        <h3 class="fw-bold">Key Features</h3>
+        <p class="text-muted">Ensure your code with vulnerability scanner.</p>
+
+        <div class="row mt-4">
+            
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <div class="icon">🔍</div>
+                    <h5>URL Scan</h5>
+                    <p class="text-muted small">
+                        Scan and analyze URLs to detect vulnerabilities.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <div class="icon">📄</div>
+                    <h5>File Analysis</h5>
+                    <p class="text-muted small">
+                        Analyze uploaded files for potential threats.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <div class="icon">📊</div>
+                    <h5>Report Analysis</h5>
+                    <p class="text-muted small">
+                        Get detailed vulnerability reports and insights.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section> -->
+<section class="py-5 bg-white text-center">
+    <div class="container">
+        <h3 class="fw-bold mb-2">Key Features</h3>
+        <p class="text-muted mb-5">Ensure your code with our vulnerability scanner.</p>
+
+        <div class="row g-4">
+            
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm p-4">
+                    <div class="mb-3">
+                        <i class="bi bi-search text-primary fs-1"></i>
+                    </div>
+                    <div class="card-body p-0">
+                        <h5 class="fw-bold">URL Scan</h5>
+                        <p class="text-muted small mb-0">
+                            Scan and analyze URLs to detect vulnerabilities and malicious scripts instantly.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm p-4">
+                    <div class="mb-3">
+                        <i class="bi bi-file-earmark-code text-primary fs-1"></i>
+                    </div>
+                    <div class="card-body p-0">
+                        <h5 class="fw-bold">File Analysis</h5>
+                        <p class="text-muted small mb-0">
+                            Analyze uploaded files for potential threats using our deep-learning engine.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm p-4">
+                    <div class="mb-3">
+                        <i class="bi bi-graph-up-arrow text-primary fs-1"></i>
+                    </div>
+                    <div class="card-body p-0">
+                        <h5 class="fw-bold">Report Analysis</h5>
+                        <p class="text-muted small mb-0">
+                            Get detailed vulnerability reports and actionable security insights.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div> </div> </section>
+<!-- WHY SECTION -->
+<section class="section bg-light">
+    <div class="container text-center">
+        <h3 class="fw-bold">Why SecuriScan?</h3>
+        <p class="text-muted">
+            Protect your code efficiently from common attacking techniques.
+        </p>
+
+        <div class="row mt-5">
+
+            <div class="col-md-4">
+                <div class="icon">🛡️</div>
+                <h5>Proactive Defense</h5>
+                <p class="text-muted small">
+                    Detect threats early and prevent attacks before damage occurs.
+                </p>
+            </div>
+
+            <div class="col-md-4">
+                <div class="icon">⚙️</div>
+                <h5>Smart Protection</h5>
+                <p class="text-muted small">
+                    Continuous monitoring and smart vulnerability detection.
+                </p>
+            </div>
+
+            <div class="col-md-4">
+                <div class="icon">📑</div>
+                <h5>Detailed Reports</h5>
+                <p class="text-muted small">
+                    Comprehensive reports with actionable recommendations.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Illustration -->
+        <!-- <div class="mt-5">            <img src="https://cdn-icons-png.flaticon.com/512/2920/2920349.png" width="250"></div> -->
+    </div>
+</section>
+
+<!-- get in touch -->
+<!-- <section class="section"><div class="container text-center"><h3 class="fw-bold">Get in Touch</h3><p class="text-muted">Contact us regarding vulnerability scans.</p><div class="row justify-content-center mt-4"><div class="col-md-6"><div class="login-card"><form><div class="row mb-3"><div class="col"><input type="text" class="form-control" placeholder="First Name"></div><div class="col"><input type="text" class="form-control" placeholder="Last Name"></div></div><input type="email" class="form-control mb-3" placeholder="Email"><textarea class="form-control mb-3" rows="3" placeholder="Message"></textarea>                        <button class="btn btn-primary w-100">Submit</button></form></div></div></div></div></section> -->
+<!--  -->
+<div class="container-fluid split-container px-0 securiscan-fade-in">
+
+    <div class="row align-items-center justify-content-center g-0 text-center">
+        
+        <div class="col-12 col-md-6 text-center move-left">
+        <img src="https://cdn-icons-png.flaticon.com/512/2920/2920349.png" width="250"
+" alt="SecuriScan Magnifying Glass" class="img-fluid magnifying-image" style="max-width: 300px;">
+        </div>
+
+        <div class="col-12 col-md-6 move-right-fade-in text-center text-md-start">
+            
+            <h2 class="fw-bold">Get in Touch</h2>
+            <p class="text-muted">Contact us regarding vulnerability scans.</p>
+
+            <form class="p-4 p-md-0 mt-4">
+                <div class="row mb-3">
+                    <div class="col-12 col-sm-6 mb-3 mb-sm-0">
+                        <input type="text" class="form-control" placeholder="First Name" required>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <input type="text" class="form-control" placeholder="Last Name" required>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Email" required>
+                </div>
+
+                <div class="mb-3">
+                    <textarea class="form-control" rows="4" placeholder="Message" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">Submit</button>
+            </form>
+        </div> </div> </div> `
+<!--  -->
+<div class="container mt-5">
+    <div class="row">
+
+        <div class="col-md-6 mb-4">
+            <div class="d-flex">
+                <div class="me-3 fs-2">🛡️</div>
+                <div>
+                    <h6 class="fw-bold">Proactive Defense</h6>
+                    <div class="text-muted small">Protect your code efficiently from common attacking techniques.</div>
+                    <ul class="small text-muted mt-2">
+                        <li>Protect defense and common attacking techniques</li>
+                        <li>Continuous monitoring</li>
+                        <li>Real-time alerts</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="d-flex">
+                <div class="me-3 fs-2">⚙️</div>
+                <div>
+                    <h6 class="fw-bold">Proactive Defense</h6>
+                    <ul class="small text-muted mt-2">
+                        <li>Procedural and preventive defenses</li>
+                        <li>Common report attacking features</li>
+                        <li>Continuous monitoring</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="d-flex">
+                <div class="me-3 fs-2">📄</div>
+                <div>
+                    <h6 class="fw-bold">Detailed Reports</h6>
+                    <ul class="small text-muted mt-2">
+                        <li>Detailed attack reports</li>
+                        <li>Protection recommendations</li>
+                        <li>Educational insights</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="d-flex">
+                <div class="me-3 fs-2">📘</div>
+                <div>
+                    <h6 class="fw-bold">Educational Guides</h6>
+                    <ul class="small text-muted mt-2">
+                        <li>Beginner-friendly guides</li>
+                        <li>Step-by-step solutions</li>
+                        <li>Security awareness training</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="container mt-5">
+    <div class="row">
+
+        <!-- Support -->
+        <div class="col-md-6">
+            <h6 class="fw-bold">Support</h6>
+            <div class="text-muted small">support@email.com</div>
+            <div class="text-muted small">security@email.com</div>
+            <div class="text-muted small">scanreport@gmail.com</div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="col-md-6">
+            <h6 class="fw-bold">FAQ</h6>
+
+            <div class="accordion" id="faqAccordion">
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq1">
+                            What is the customization?
+                        </button>
+                    </div>
+                    <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body small text-muted">
+                            Customization allows users to tailor scan results and reports based on requirements.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">
+                            What are system requirements?
+                        </button>
+                    </div>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body small text-muted">
+                            Works on modern browsers with internet connection and basic system resources.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>   
+       
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center py-3 bg-white">
+    <small class="text-muted">© 2026 SecuriScan - Vulnerability Scanner</small>
+</footer>
+
+<!-- Bootstrap JS -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+
+
+    // 'DOMContentLoaded' ensures the script waits until the HTML is fully parsed
+    document.addEventListener('DOMContentLoaded', () => {
+        
+        // Configuration for the Intersection Observer (defines when the animation starts)
+        const observerOptions = {
+            threshold: 0.1 // Triggers when at least 10% of the card is visible on screen
+        };
+
+        // This function runs whenever a card enters or leaves the viewport
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                // If the card is visible in the browser window...
+                if (entry.isIntersecting) {
+                    // Change opacity to 1 (fully visible)
+                    entry.target.style.opacity = '1';
+                    // Move the card back to its original position (Y-axis 0)
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // 'querySelectorAll' selects every element with the class '.card'
+        document.querySelectorAll('.card').forEach(card => {
+            card.style.opacity = '0'; // Start the card as invisible
+            card.style.transform = 'translateY(20px)'; // Shift it down 20px initially
+            card.style.transition = 'all 0.6s ease-out'; // Set the speed and smoothness of the movement
+            
+            // Tell the observer to start watching this specific card
+            observer.observe(card);
+        });
+    });
+    </script>
+
+</body>
+</html>
