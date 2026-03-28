@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive design for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title -->
+    <title>SecuriScan Auth</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <style>
+        /* Background gradient for full page */
+        body {
+            background: linear-gradient(135deg, #2c5aa0, #3d79d8);
+            height: 100vh;
+        }
+
+        /* Card styling for auth box */
+        .auth-card {
+            max-width: 400px;
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        /* Hide signup form initially */
+        #signupForm {
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="d-flex align-items-center justify-content-center">
+
+    <!-- Main Container -->
+    <div class="card shadow-lg p-4 auth-card">
+
+        <!-- Title -->
+        <h3 class="text-center mb-3 fw-bold">SecuriScan</h3>
+
+        <!-- Toggle Buttons -->
+        <!-- Purpose: Switch between Login and Signup -->
+        <div class="d-flex mb-4">
+            <button class="btn btn-primary w-50" id="loginBtn">Login</button>
+            <button class="btn btn-outline-primary w-50" id="signupBtn">Sign Up</button>
+        </div>
+
+        <!-- ================= LOGIN FORM ================= -->
+        <form id="loginForm">
+
+            <!-- Email Input -->
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <div class="input-group">
+                    <!-- Icon -->
+                    <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+
+                    <!-- Input -->
+                    <input type="email" class="form-control" placeholder="Enter email" required>
+                </div>
+            </div>
+
+            <!-- Password Input -->
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                    <input type="password" class="form-control" placeholder="Enter password" required>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-dark w-100">
+                Sign In
+            </button>
+
+        </form>
+
+
+        <!-- ================= SIGNUP FORM ================= -->
+        <form id="signupForm">
+
+            <!-- Name Input -->
+            <div class="mb-3">
+                <label class="form-label">Full Name</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-person"></i></span>
+                    <input type="text" class="form-control" placeholder="Enter name" required>
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                    <input type="email" class="form-control" placeholder="Enter email" required>
+                </div>
+            </div>
+
+            <!-- Password -->
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                    <input type="password" class="form-control" placeholder="Create password" required>
+                </div>
+            </div>
+
+            <!-- Confirm Password -->
+            <div class="mb-3">
+                <label class="form-label">Confirm Password</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-shield-lock"></i></span>
+                    <input type="password" class="form-control" placeholder="Confirm password" required>
+                </div>
+            </div>
+
+            <!-- Submit -->
+            <button type="submit" class="btn btn-primary w-100">
+                Create Account
+            </button>
+
+        </form>
+
+    </div>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script>
+        // Get buttons
+        const loginBtn = document.getElementById("loginBtn");
+        const signupBtn = document.getElementById("signupBtn");
+
+        // Get forms
+        const loginForm = document.getElementById("loginForm");
+        const signupForm = document.getElementById("signupForm");
+
+        // Show Login Form
+        loginBtn.addEventListener("click", () => {
+            loginForm.style.display = "block";  // show login
+            signupForm.style.display = "none";  // hide signup
+
+            loginBtn.classList.add("btn-primary"); // active style
+            loginBtn.classList.remove("btn-outline-primary");
+
+            signupBtn.classList.add("btn-outline-primary");
+            signupBtn.classList.remove("btn-primary");
+        });
+
+        // Show Signup Form
+        signupBtn.addEventListener("click", () => {
+            loginForm.style.display = "none";   // hide login
+            signupForm.style.display = "block"; // show signup
+
+            signupBtn.classList.add("btn-primary");
+            signupBtn.classList.remove("btn-outline-primary");
+
+            loginBtn.classList.add("btn-outline-primary");
+            loginBtn.classList.remove("btn-primary");
+        });
+
+        // Example form submission (for future backend)
+        loginForm.addEventListener("submit", (e) => {
+            e.preventDefault(); // stop reload
+            alert("Login successful (connect backend here)");
+        });
+
+        signupForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+            alert("Account created (connect backend here)");
+        });
+    </script>
+
+</body>
+</html>
